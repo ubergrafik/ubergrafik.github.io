@@ -1,0 +1,27 @@
+main {
+  width:100%;
+  margin: 0px auto;
+  padding:5px;
+  border:solid 1px #000;
+ }
+ 
+ article {
+  height:100px;
+  border:solid 1px #000;
+  display:inline-block;
+ }
+ 
+ .grid_1{
+  width:98%;
+  background-color: aquamarine;
+ }
+ 
+  .grid_2{
+  width:49%;
+  background-color: beige;
+ }
+ 
+  .grid_3{
+  width:32%;
+  background-color: burlywood;
+ }
