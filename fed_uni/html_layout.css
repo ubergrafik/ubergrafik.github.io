@@ -1,0 +1,24 @@
+body{
+  background-color:beige;
+  min-width:300px;
+  max-width:1024px;
+  /* keeps content centred in page */
+  margin-left:auto;
+  margin-right:auto;
+}
+
+nav, main, header, ul, aside, footer{
+  border:solid 1px #000;
+  margin:3px;
+}
+
+main{
+  width:70%;
+  display:inline-block;
+}
+
+aside{
+  width:26%;
+  display: inline-block;
+  vertical-align:top;
+}

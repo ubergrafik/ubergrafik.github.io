@@ -1,0 +1,79 @@
+body{
+  min-width:300px;
+  max-width:1024px;
+  /* keeps content centered in page */
+  margin-left:auto;
+  margin-right:auto;
+  /* display wireframe for getting alignment correct:
+  WILL NOT WORK IN ALL BROWSERS
+  https://css-tricks.com/almanac/properties/b/background-image/ */
+  background: url("images/wireframe.jpg") top center no-repeat;
+}
+
+#logo, nav, main, header, ul, aside, footer{
+  border:solid 1px #000;
+  margin:3px;
+}
+
+#logo{
+	width:25%;
+	height:150px;
+	background-color:darkorange;
+	display: inline-block;
+	margin:3px;
+	vertical-align:top;
+}
+
+/* NAV SECTION - contains social links and nav items */
+nav{
+	width:72%;
+	display: inline-block;
+	margin:3px;
+	text-align:right;
+	background-color:bisque;
+}
+
+/* social links */
+#social{
+	width:25%;
+	background-color:darkorange;
+	display: inline-block;
+	margin:3px;
+	text-align:left;
+}
+
+/* ALL THE NAV STUFF IS CONTROLLED IN HERE */
+ul{
+	list-style-type:none;
+	/* over-ride the default list margin/padding */
+	margin:0px;
+	padding:0px;
+	text-align:center;
+}
+
+ul li {
+	background-color:darkorange;
+	display: inline-block;
+	width:19.1%;
+	margin-right:1px;
+}
+
+ul li:last-child {
+	margin-right:0px;
+}
+
+main{
+  
+}
+
+aside{
+	width:30%;
+	display: inline-block;
+	border:solid 1px #000;
+}
+
+article{
+	width:65%;
+	display: inline-block;
+	border:solid 1px #000;
+}
