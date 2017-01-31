@@ -13,6 +13,9 @@ Save and test regularly - show it to your family and friends.
     margin:0px;
     */
 }
+html {
+    height: 100%;
+}
 
 body {
      /*
@@ -21,21 +24,31 @@ body {
     font-family: 'Roboto', sans-serif;
     font-size: 1.8em;  /* equivalent to 16px*/
     line-height: 1.5em;
+    height: 100%;
+    display: table; width: 100%; height: 100%;
    /* background: url("../img/iphone4_google2_retina.png") top center no-repeat;
     */
 }
 
 header{
+    text-align: center;
     background-color:red;
+    display: table-row;
+    height: 1px;
 }
 
 
 main{
     background-color:skyblue;
+    display: table-row;
+    height: auto;
 }
 
 footer{
+    text-align: center;
     background-color:firebrick;
+    display: table-row;
+    height: 1px;
 }
 
 p{
@@ -62,13 +75,27 @@ ul{
 ul li{
     list-style-type: none;
     border-top: solid black 1px;
-    padding-top: 1.1em;
-    padding-bottom: 1.1em;
+    
 }
 
+footer ul {
+    display: inline;
+}
+
+footer ul li {
+    display: inline;
+}
 
 #imageref{
     font-size: 0.7em;
+}
+
+#home_link{
+    display: inline;
+}
+
+#page_links{
+    display: inline;
 }
 
 
@@ -78,4 +105,27 @@ text-decoration: none;
 
 a:hover{
     cursor: pointer;
+}
+
+tooltip-label {
+  font-size: 1em;
+  font-family: 'Helvetica' serif;
+  background: lightblue;
+  padding: 0.4em;
+  cursor: pointer;
+  display: inline-block;
+  margin-bottom: 1em
+}
+.tooltip-input {
+    display: none;
+} /*Hide input element*/
+
+.tooltip-content {
+    margin-bottom: 1.5em;
+}
+.tooltip-input:not(checked) ~ .tooltip-content {
+    display: none;
+}
+.tooltip-input:checked ~ .tooltip-content {       
+    display: block;
 }
